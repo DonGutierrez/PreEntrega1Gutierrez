@@ -1,0 +1,24 @@
+body {
+    background-image: url(../img/fotohd2.jpg)
+ }
+
+ h1{
+    text-align: center; 
+    color: aquamarine;
+ }
+ h2{
+    text-align: center; 
+    color: aqua;
+ }
+
+button{
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 600px;
+    margin: auto;
+}

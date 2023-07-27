@@ -22,3 +22,14 @@ button{
     width: 600px;
     margin: auto;
 }
+
+
+  #historial-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  #historial-container div {
+    margin-bottom: 5px;
+  }

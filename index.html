@@ -9,31 +9,22 @@
 </head>
 
 <body>
-
-    <h1>3 En Raya</h1>
-    <h2>La batalla comienza que gane el mejor</h2>
-
-    <div class="contenedor">
-        <button> </button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-       
-    </div>
-    <h2>historial de partidas ganadas</h2>
-    <div id="historial-container"></div>
-  <button id="reiniciar" onclick="reiniciar()">Reiniciar</button>
+    <div class="caja">
+    <form>
+        <label for="username">Usuario</label>
+        <input type="text" id="username" placeholder="ejemplo" required>
+        <label for="password">Usuario</label>
+        <input type="password" id="password" placeholder="contraseña" required>
+        <div class="box-visible">
+            <input type="checkbox" id="visible">
+            <label for="visible">Mostrar contraseña</label>
+        </div>
+        <button type="sibmit" id="submit">iniciar sesion</button>
+    </form>
+</div>
+</div>
+    <script src="./js/login.js"></script>
     
-    
-
-    
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>

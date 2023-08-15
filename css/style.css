@@ -1,35 +1,104 @@
 body {
-    background-image: url(../img/fotohd2.jpg)
- }
+  background-image: url(../img/fotohd2.jpg)
+}
 
- h1{
-    text-align: center; 
-    color: aquamarine;
- }
- h2{
-    text-align: center; 
-    color: aqua;
- }
+h1{
+  text-align: center; 
+  color: aquamarine;
+}
+h2{
+  text-align: center; 
+  color: aqua;
+}
 
 button{
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .contenedor{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 600px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 600px;
+  margin: auto;
 }
 
 
-  #historial-container {
-    margin-top: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
+#historial-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
 
-  #historial-container div {
-    margin-bottom: 5px;
+#historial-container div {
+  margin-bottom: 5px;
+}
+    
+.caja{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+    form{
+      width: 300px;
+      height: 370px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 10px 4px 10px 10px red;
+      border-radius: 20px;
+    }
+
+  
+    
+    form input[type="text"], input[type="password"]{
+      outline: 0;
+      border: 1px solid white;
+      width: 80%;
+      padding: 10px;
+    }
+    form label{
+      font-weight: 500;
+      padding: 10px;
+    }
+
+    .box-visible{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    form button{
+      outline: 0;
+      border: 0;
+      background-color: blue;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 250px;
+      padding: 5px;
+      transition: all .3s ease-in-out;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+    }
+    form button:hover{
+      opacity: .75;
+    }
+
+    footer{
+      background-color: black;
+      padding: 1em 0;
+      text-align: center;
+     margin-top: auto;
+    }
+    
+    .foot-texto{
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
   }

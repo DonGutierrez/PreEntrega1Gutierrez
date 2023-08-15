@@ -1,58 +1,3 @@
-
-//funcion de Bienvenida
-function Saludos() {
-    alert("Bienvenido a juego de guerra de tres en raya");
-    alert("Para poder ingresar deberas registrarte para una mejor expericencia");
-    alert("disfruta del clasico tres en raya compitiendo con jugadores de todo el mundo online");
-}
-Saludos();
-// funcion de registro
-const usuarios = [];
-
-const mostrarAlerta = (mensaje) => {
-  alert(mensaje);
-};
-
-const obtenerEntradaUsuario = (mensaje) => {
-  return prompt(mensaje);
-};
-
-const signup = () => {
-  let username = obtenerEntradaUsuario("Ingrese un nombre de usuario:");
-  username = username.trim();
-  if (!username) {
-    mostrarAlerta("Nombre de usuario no válido. Intente nuevamente.");
-    return;
-  }
-
-  if (usuarios.find(user => user.username === username)) {
-    mostrarAlerta("El usuario ya existe. Por favor, inicia sesión.");
-    return; 
-  } else {
-    const password = obtenerEntradaUsuario("Ingrese una contraseña:");
-    if (!password) {
-      mostrarAlerta("Contraseña no válida. Intente nuevamente.");
-      return;
-    }
-
-    usuarios.push({ username, password });
-    mostrarAlerta("Registro exitoso.");
-  }
-};
-
-const start = () => {
-  const action = obtenerEntradaUsuario("Ingrese 'signup' para registrarse:");
-  if (action === "signup") {
-    signup();
-  } else {
-    mostrarAlerta("Acción inválida. Por favor, ingrese 'signup' para registrarse.");
-    start();
-  }
-};
-
-start();
-// fin de registo de cuenta
-
 // declaraciones del tablero 
 let turno = 0;
 const tablero = [];
@@ -69,12 +14,12 @@ const bPulsado = (e, pos) => {
   tablero[pos] = color;
   if (haGanado()) {
     const jugadorGanador = color === 'red' ? jugadores[0] : jugadores[1];
-    alert('Felicidades Ganaste ' + color);
+
     jugadorGanador.victorias++;
     mostrarHistorial();
     reiniciar();
   } else if (turno === 9) {
-    alert('¡Empate!');
+   
     reiniciar();
   }
 };
@@ -123,5 +68,3 @@ document.querySelectorAll('button').forEach((obj, i) => obj.addEventListener('cl
 
 mostrarHistorial();
 //fin de momento
-
-

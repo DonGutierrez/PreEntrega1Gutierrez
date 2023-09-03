@@ -1,4 +1,4 @@
-
+/*inicio de css, estilo en comun*/
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +19,9 @@ a {
   text-decoration: none;
 }
 
+/*inicio de css, estilo en comun*/
 
-
-
+/*estilo de index*/
 
 .wrapper {
   display: grid;
@@ -238,6 +238,8 @@ main {
   display: none;
 }
 
+/*footer*/
+
 footer {
   text-align: center;
   padding: 5px;
@@ -248,6 +250,7 @@ footer {
   
 }
 
+/*inicio de los media*/
 
 @media screen and (max-width: 850px) {
   .contenedor-productos {

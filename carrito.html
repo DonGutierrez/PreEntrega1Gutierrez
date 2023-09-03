@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class="wrapper">
         <header class="header-mobile">
@@ -25,22 +23,15 @@
                 <h1 class="logo">NewTecno</h1>
             </header>
             <nav>
-                <ul class="menu">
+                <ul>
                     <li>
-                        <button id="todos" class="boton-menu boton-categoria active"> Todos los productos</button>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            Seguir comprando
+                        </a>
                     </li>
                     <li>
-                        <button id="placa de video" class="boton-menu boton-categoria"> Placa de video</button>
-                    </li>
-                    <li>
-                        <button id="fuente de alimentacion" class="boton-menu boton-categoria"> fuente de alimentacion</button>
-                    </li>
-                    <li>
-                        <button id="motherboard" class="boton-menu boton-categoria"> motherboard</button>
-                    </li>
-                    <li>
-                        <a class="boton-menu boton-carrito" href="./carrito.html">
-                             Carrito <span id="numerito" class="numerito">0</span>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                             Carrito
                         </a>
                     </li>
                 </ul>
@@ -48,13 +39,34 @@
            
         </aside>
         <main>
-            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
-            <div id="contenedor-productos" class="contenedor-productos">
-                <!-- Esto se va a rellenar con JS -->
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío.</p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Esto se va a completar con el JS -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. </p>
+
             </div>
         </main>
     </div>
     <footer>
+       
         <div>
             <a href="https://www.facebook.com/" target="_blank">
               <img src="img/facebook.png" alt="facebook">
@@ -70,15 +82,13 @@
               <img src="img/youtube.png" alt="youtube">
             </a>
            </div>
-          
 
         <p>Author: Daniel Gutierrez<br>
             <a href="mailto:hege@example.com">hege@example.com</a></p>
     </footer>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-        <script src="./js/main.js"></script>
-        <script src="./js/menu.js"></script>
-</body>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
 
+</body>
 </html>

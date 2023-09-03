@@ -1,0 +1,123 @@
+ [
+    {
+      "id": "placa 1",
+      "titulo": "Placa de video 3060ti",
+      "imagen": "./img/placa 1.jpg",
+      "categoria": {
+        "nombre": "Placa de video",
+        "id": "placa de video"
+      },
+      "precio": 400000
+    },
+    {
+      "id": "placa 2",
+      "titulo": "Placa De Video Gamer GeForce RTX 3090TI MSI Gaming ",
+      "imagen": "./img/placa 2.jpg",
+      "categoria": {
+        "nombre": "Placa de video",
+        "id": "placa de video"
+      },
+      "precio": 55500
+    },
+    {
+      "id": "placa 3",
+      "titulo": "Placa de video MSI NVIDIA GeForce RTX 3070 Ti",
+      "imagen": "./img/placa 3.jpg",
+      "categoria": {
+        "nombre": "Placa de video",
+        "id": "placa de video"
+      },
+      "precio": 500000
+    },
+    {
+      "id": "placa 4",
+      "titulo": "Placa De Video Gigabyte Rtx 4060 Ti Oc 8gb ",
+      "imagen": "./img/placa 4.jpg",
+      "categoria": {
+        "nombre": "Placa de video",
+        "id": "placa de video"
+      },
+      "precio":  640000
+    },
+    {
+      "id": "fuente 1",
+      "titulo": "Cougar GX-S Series 750",
+      "imagen": "./img/fuente 1.jpg",
+      "categoria": {
+        "nombre": "Fuente alimentacion",
+        "id": "fuente de alimentacion"
+      },
+      "precio": 60000
+    },
+    {
+      "id": "fuente 2",
+      "titulo": "FSP Aurum CM Gold 650M 650-Watt 80 PLUS Gold Power",
+      "imagen": "./img/fuente 2.jpg",
+      "categoria": {
+        "nombre": "Fuente de alimentacion",
+        "id": "fuente de alimentacion"
+      },
+      "precio": 55000
+    },
+    {
+      "id": "fuente 3",
+      "titulo": "Zalman ZM1000-EBT power",
+      "imagen": "./img/fuente 3.jpg",
+      "categoria": {
+        "nombre": "Fuente de alimentacion",
+        "id": "fuente de alimentacion"
+      },
+      "precio": 50000
+    },
+    {
+      "id": "fuente 4",
+      "titulo": "Fuente Seasonic 650W Core TUF GM-650 80 Plus Gold ",
+      "imagen": "./img/fuente 4.jpg",
+      "categoria": {
+        "nombre": "Fuente de alimentacion",
+        "id": "fuente de alimentacion"
+      },
+      "precio": 85000
+    },
+    {
+      "id": "motherboard 1",
+      "titulo": "MSI MEG Z790 ACE",
+      "imagen": "./img/motherboard-1.jpg",
+      "categoria": {
+        "nombre": "Motherboard",
+        "id": "motherboard"
+      },
+      "precio": 35000
+    },
+    {
+      "id": "motherboard 2",
+      "titulo": "Asus ROG Maximus Z790 Hero",
+      "imagen": "./img/motherboard 2.jpg",
+      "categoria": {
+        "nombre": "Motherboard",
+        "id": "motherboard"
+      },
+      "precio": 46500
+    },
+    {
+      "id": "motherboard 3",
+      "titulo": "GIGABYTE Z790 AORUS Master",
+      "imagen": "./img/motherboard 3.jpg",
+      "categoria": {
+        "nombre": "Motherboard",
+        "id": "motherboard"
+      },
+      "precio": 41200
+    },
+    {
+      "id": "motherboard 4",
+      "titulo": "ASUS ROG STRIX Z790-F GAMING WIFI",
+      "imagen": "./img/motherboard 4.jpg",
+      "categoria": {
+        "nombre": "Motherboard",
+        "id": "motherboard"
+      },
+      "precio": 57000
+    }
+  
+  ]
